@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4X6-Nu-qjh" customClass="BlockView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-Z1-4yz">
+                    <rect key="frame" x="56" y="38" width="84" height="65"/>
+                    <color key="backgroundColor" red="0.53652170170000002" green="0.31229456449999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="9uf-3T-ngR"/>
+                        <constraint firstAttribute="height" constant="65" id="jtQ-5M-IFz"/>
+                    </constraints>
+                    <state key="normal" title="点赞"/>
+                    <connections>
+                        <action selector="likeAndCommentBtn:" destination="4X6-Nu-qjh" eventType="touchUpInside" id="G4B-gk-kVi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuC-DN-B8d">
+                    <rect key="frame" x="216" y="38" width="84" height="65"/>
+                    <color key="backgroundColor" red="1" green="0.093666113359999997" blue="0.99536127610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="4ar-iB-TZr"/>
+                        <constraint firstAttribute="width" constant="84" id="Txp-Q0-SxB"/>
+                    </constraints>
+                    <state key="normal" title="评论"/>
+                    <connections>
+                        <action selector="likeAndCommentBtn:" destination="4X6-Nu-qjh" eventType="touchUpInside" id="gYt-s8-tX7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RuC-DN-B8d" firstAttribute="centerY" secondItem="4X6-Nu-qjh" secondAttribute="centerY" id="2wa-fn-081"/>
+                <constraint firstItem="TWo-Z1-4yz" firstAttribute="centerY" secondItem="4X6-Nu-qjh" secondAttribute="centerY" id="HsP-af-bPA"/>
+                <constraint firstItem="TWo-Z1-4yz" firstAttribute="leading" secondItem="4X6-Nu-qjh" secondAttribute="leading" constant="56" id="gvL-yd-WcF"/>
+                <constraint firstItem="RuC-DN-B8d" firstAttribute="leading" secondItem="TWo-Z1-4yz" secondAttribute="trailing" constant="76" id="ivX-la-eM9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="13.5" y="-49"/>
+        </view>
+    </objects>
+</document>
